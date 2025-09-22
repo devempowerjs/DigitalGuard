@@ -1,2 +1,3 @@
 # Digital Guard
-A website made by an student to teach people about Digital Footprint.
+This is the OFFICIAL SRC of DigitialGuard website created by [devempower.js](https://github.com/devempowerjs)
+This app includes images from [unsplash](https://unsplash.com/) made under MIT licence.
