@@ -51,26 +51,10 @@ npm run dev
 
 ---
 
-## 📂 Folder Structure
-
-```
-digitalguard/
-├── src/
-│   ├── pages/          # Page components (About, Resources, Tools, Contact, etc.)
-│   ├── components/     # Reusable UI components
-│   ├── assets/         # Images, icons, and static files
-│   ├── styles/         # CSS styling
-│   └── main.tsx        # App entry point
-├── public/             # Static public assets
-├── package.json        # Dependencies & scripts
-└── vite.config.ts      # Vite configuration
-```
-
 ---
-
 ## 📜 License
 
-© 2025 Mayank / DigitalGuard — All Rights Reserved
+© 2025 DigitalGuard. All Rights Reserved
 This source code is publicly viewable for reference only. No copying, modification, distribution, or reuse of any kind is allowed without explicit permission.
 
 ---
