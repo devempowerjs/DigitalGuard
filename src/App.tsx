@@ -4,6 +4,7 @@ import { SEO } from './components/SEO';
 import { HeroSection } from './components/home/HeroSection';
 import { FeaturesSection } from './components/home/FeaturesSection';
 import { Button } from './components/ui/button';
+import { Analytics } from "@vercel/analytics/react";
 
 // Sare pages ka import kar rahe hain
 import ToolsPage from './pages/tools';
