@@ -36,7 +36,7 @@ export default function ResourcesPage() {
       duration: '4:12',
       description: 'Understand the long-term consequences of your online actions and how to manage your digital reputation.',
       // thumbnail: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop',
-      embedId: 'Ahg6qcgoay4', // TED-Ed digital footprint video
+      embedId: 'Ahg6qcgoay4', // TED-Ed digital footprint video Mayank
       level: 'Beginner',
       audience: 'General Public',
     },
