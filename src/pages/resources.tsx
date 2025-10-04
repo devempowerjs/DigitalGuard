@@ -15,6 +15,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../co
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
+import { ThumbnailPlaceholder } from '../components/ThumbnailPlaceholder';
 
 export default function ResourcesPage() {
   const videos = [
@@ -23,7 +24,8 @@ export default function ResourcesPage() {
       creator: 'Common Sense Education',
       duration: '2:55',
       description: 'Learn what digital footprints are and how they affect your online presence and future opportunities.',
-      thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop',
+      // RESOURCES PAGE THUMBNAIL FIX: Unsplash thumbnails ko comment kar diya hai kyunki school networks mein block ho sakte hain
+      // thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop',
       embedId: 'Ro_LlCGFKVE', // Common Sense Education digital footprint video
       level: 'Beginner',
       audience: 'Students & Educators',
@@ -33,7 +35,7 @@ export default function ResourcesPage() {
       creator: 'TED-Ed',
       duration: '4:12',
       description: 'Understand the long-term consequences of your online actions and how to manage your digital reputation.',
-      thumbnail: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop',
       embedId: 'Ahg6qcgoay4', // TED-Ed digital footprint video
       level: 'Beginner',
       audience: 'General Public',
@@ -43,7 +45,7 @@ export default function ResourcesPage() {
       creator: 'National Cyber Security Alliance',
       duration: '6:33',
       description: 'Step-by-step tutorial on configuring privacy settings and protecting your personal information online.',
-      thumbnail: 'https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=300&h=200&fit=crop',
       embedId: 'WdpirMhuZjQ', // NCSA Privacy Protection Guide
       level: 'Intermediate',
       audience: 'General Public',
@@ -53,7 +55,7 @@ export default function ResourcesPage() {
       creator: 'Common Sense Media',
       duration: '3:47',
       description: 'Essential guide for teens on responsible digital citizenship and staying safe online.',
-      thumbnail: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=200&fit=crop',
       embedId: 'u6vSpFsoOd0', // Common Sense Media Digital Citizenship
       level: 'Intermediate',
       audience: 'Teens',
@@ -63,7 +65,7 @@ export default function ResourcesPage() {
       creator: 'NetSmartz Workshop',
       duration: '5:21',
       description: 'Educational content on internet safety, cyberbullying prevention, and digital security for students.',
-      thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop',
       embedId: 'tAjqzAJBrIE', // NetSmartz Internet Safety
       level: 'Beginner',
       audience: 'Kids & Students',
@@ -73,7 +75,7 @@ export default function ResourcesPage() {
       creator: 'Wall Street Journal',
       duration: '8:45',
       description: 'Investigative look into how major tech companies collect and use your personal data.',
-      thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop',
       embedId: 'BxuY5qMnvic', // WSJ Big Tech Tracking
       level: 'Advanced',
       audience: 'General Public',
@@ -83,7 +85,7 @@ export default function ResourcesPage() {
       creator: 'TED',
       duration: '12:15',
       description: 'Understanding the psychological impact of social media use and digital footprints on mental health.',
-      thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop',
       embedId: 'HffWFd_6bJ0', // TED Talk on Social Media and Mental Health
       level: 'Intermediate',
       audience: 'General Public',
@@ -93,7 +95,7 @@ export default function ResourcesPage() {
       creator: 'StopBullying.gov',
       duration: '4:33',
       description: 'Official guidance on preventing and responding to cyberbullying, including digital footprint awareness.',
-      thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop',
       embedId: 'NRFevVrLCDA', // StopBullying.gov Cyberbullying Prevention
       level: 'Beginner',
       audience: 'Students & Parents',
@@ -104,7 +106,8 @@ export default function ResourcesPage() {
     {
       title: 'Digital Footprint Types: Active vs Passive',
       description: 'Visual comparison of different types of digital footprints with examples.',
-      thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=400&fit=crop',
+      // INFOGRAPHICS THUMBNAILS FIX: Unsplash images ko comment kar diya hai school networks ke liye
+      // thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=400&fit=crop',
       downloadUrl: '#',
       size: '2.1 MB',
       format: 'PDF',
@@ -112,7 +115,7 @@ export default function ResourcesPage() {
     {
       title: 'Social Media Privacy Guide',
       description: 'Quick reference guide for privacy settings on major social platforms.',
-      thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=400&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=400&fit=crop',
       downloadUrl: '#',
       size: '1.8 MB',
       format: 'PDF',
@@ -120,7 +123,7 @@ export default function ResourcesPage() {
     {
       title: 'Data Storage Timeline',
       description: 'How long different types of data are stored by various online services.',
-      thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=400&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=400&fit=crop',
       downloadUrl: '#',
       size: '1.5 MB',
       format: 'PDF',
@@ -128,7 +131,7 @@ export default function ResourcesPage() {
     {
       title: 'Password Security Best Practices',
       description: 'Essential tips for creating and managing secure passwords.',
-      thumbnail: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=400&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=400&fit=crop',
       downloadUrl: '#',
       size: '1.2 MB',
       format: 'PDF',
@@ -141,7 +144,8 @@ export default function ResourcesPage() {
       author: 'Electronic Frontier Foundation',
       readTime: '15 min read',
       description: 'Comprehensive guide covering all aspects of digital privacy, from basic concepts to advanced protection techniques.',
-      thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop',
+      // ARTICLES THUMBNAILS FIX: School networks mein Unsplash block ho sakta hai isliye comment kar diya
+      // thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop',
       url: 'https://www.eff.org/deeplinks/2017/12/guide-digital-privacy',
       category: 'Privacy Guide',
       level: 'Advanced',
@@ -151,7 +155,7 @@ export default function ResourcesPage() {
       author: 'American Psychological Association',
       readTime: '10 min read',
       description: 'Research-based insights into how social media use affects mental health and well-being.',
-      thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop',
       url: 'https://www.apa.org/science/about/psa/2022/04/social-media-mental-health',
       category: 'Research',
       level: 'Intermediate',
@@ -161,7 +165,7 @@ export default function ResourcesPage() {
       author: 'Privacy Rights Clearinghouse',
       readTime: '12 min read',
       description: 'Learn about companies that collect and sell your personal information and how to opt out.',
-      thumbnail: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=300&h=200&fit=crop',
       url: 'https://privacyrights.org/data-brokers',
       category: 'Privacy Guide',
       level: 'Intermediate',
@@ -171,7 +175,7 @@ export default function ResourcesPage() {
       author: 'Common Sense Media',
       readTime: '8 min read',
       description: 'How digital footprints affect students and best practices for educators.',
-      thumbnail: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=200&fit=crop',
       url: 'https://www.commonsensemedia.org/articles/digital-footprint',
       category: 'Education',
       level: 'Beginner',
@@ -181,7 +185,7 @@ export default function ResourcesPage() {
       author: 'Harvard Business Review',
       readTime: '20 min read',
       description: 'How your personal data creates value for companies and what it means for you.',
-      thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop',
       url: 'https://hbr.org/2020/01/the-economics-of-personal-data',
       category: 'Business',
       level: 'Advanced',
@@ -191,7 +195,7 @@ export default function ResourcesPage() {
       author: 'StopBullying.gov',
       readTime: '6 min read',
       description: 'Understanding the connection between digital footprints and cyberbullying.',
-      thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop',
+      // thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop',
       url: 'https://www.stopbullying.gov/cyberbullying',
       category: 'Safety',
       level: 'Beginner',
@@ -280,10 +284,16 @@ export default function ResourcesPage() {
                   {videos.map((video, index) => (
                     <Card key={index} className="hover:shadow-lg transition-shadow">
                       <div className="relative">
-                        <img 
+                        {/* VIDEO THUMBNAILS FIX: Unsplash image ki jagah CSS-based placeholder use kar rahe hain school networks ke liye */}
+                        {/* <img 
                           src={video.thumbnail} 
                           alt={video.title}
                           className="w-full h-48 object-cover rounded-t-lg"
+                        /> */}
+                        <ThumbnailPlaceholder
+                          type="video"
+                          title={video.title}
+                          className="w-full h-48 rounded-t-lg"
                         />
                         <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-t-lg opacity-0 hover:opacity-100 transition-opacity">
                           <Button size="sm" className="bg-white/90 text-black hover:bg-white">
@@ -335,10 +345,16 @@ export default function ResourcesPage() {
                   {infographics.map((infographic, index) => (
                     <Card key={index} className="hover:shadow-lg transition-shadow">
                       <div className="relative group">
-                        <img 
+                        {/* INFOGRAPHIC THUMBNAILS FIX: School networks mein Unsplash block hone par CSS placeholder use kar rahe */}
+                        {/* <img 
                           src={infographic.thumbnail} 
                           alt={infographic.title}
                           className="w-full h-64 object-cover rounded-t-lg"
+                        /> */}
+                        <ThumbnailPlaceholder
+                          type="infographic"
+                          title={infographic.title}
+                          className="w-full h-64 rounded-t-lg"
                         />
                         <div className="absolute inset-0 flex items-center justify-center bg-black/50 rounded-t-lg opacity-0 group-hover:opacity-100 transition-opacity">
                           <Button size="sm" className="bg-white/90 text-black hover:bg-white">
@@ -381,10 +397,16 @@ export default function ResourcesPage() {
                   {articles.map((article, index) => (
                     <Card key={index} className="hover:shadow-lg transition-shadow">
                       <div className="relative">
-                        <img 
+                        {/* ARTICLE THUMBNAILS FIX: School computers mein external images block hote hain isliye CSS placeholder lagaya */}
+                        {/* <img 
                           src={article.thumbnail} 
                           alt={article.title}
                           className="w-full h-48 object-cover rounded-t-lg"
+                        /> */}
+                        <ThumbnailPlaceholder
+                          type="article"
+                          title={article.title}
+                          className="w-full h-48 rounded-t-lg"
                         />
                       </div>
                       <CardHeader>
