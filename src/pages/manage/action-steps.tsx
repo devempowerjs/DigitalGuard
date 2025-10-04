@@ -79,11 +79,35 @@ export default function ActionStepsPage() {
       <div className="space-y-8">
         {/* Hero Image */}
         <div className="relative w-full h-64 rounded-lg overflow-hidden">
-          <ImageWithFallback
+          {/* ACTION STEPS PAGE IMAGE FIX: Commented out Unsplash source that may be blocked by school networks */}
+          {/* Original Unsplash image: https://images.unsplash.com/photo-1553968464-754bb963ea49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY3Rpb24lMjBzdGVwcyUyMGNoZWNrbGlzdHxlbnwxfHx8fDE3NTg4ODIxMDB8MA&ixlib=rb-4.1.0&q=80&w=1080 */}
+          {/* <ImageWithFallback
             src="https://images.unsplash.com/photo-1553968464-754bb963ea49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY3Rpb24lMjBzdGVwcyUyMGNoZWNrbGlzdHxlbnwxfHx8fDE3NTg4ODIxMDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Action steps and checklist planning"
             className="w-full h-full object-cover"
-          />
+          /> */}
+          
+          {/* NEW: CSS-based action steps and checklist illustration */}
+          <div className="w-full h-full bg-gradient-to-r from-orange-500 via-amber-600 to-yellow-500 flex items-center justify-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iY2hlY2tsaXN0IiB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik04IDEwaDI0TTggMThoMjRNOCAyNmgyNCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW9wYWNpdHk9IjAuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNjaGVja2xpc3QpIi8+PC9zdmc+')] opacity-20"></div>
+            <div className="text-center text-white z-10 p-6">
+              <div className="flex justify-center space-x-2 mb-4">
+                <div className="w-6 h-6 bg-white/30 rounded flex items-center justify-center">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="w-6 h-6 bg-white/30 rounded flex items-center justify-center">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="w-6 h-6 bg-white/20 rounded border-2 border-white/50"></div>
+              </div>
+              <h3 className="text-xl font-semibold opacity-90">Action Steps & Planning</h3>
+              <p className="text-sm opacity-75 mt-2">Your Privacy Implementation Guide</p>
+            </div>
+          </div>
         </div>
 
         {/* Overall Progress */}
