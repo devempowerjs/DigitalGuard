@@ -2,7 +2,8 @@
 User-agent: *
 Allow: /
 
-# EDUCATIONAL CONTENT: Important pages SEO ke liye
+# EDUCATIONAL CONTENT: Important pages SEO ke liye 
+# Mayank
 Allow: /learn/*
 Allow: /manage/*
 Allow: /tools
