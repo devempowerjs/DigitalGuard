@@ -4,7 +4,6 @@ import { SEO } from './components/SEO';
 import { HeroSection } from './components/home/HeroSection';
 import { FeaturesSection } from './components/home/FeaturesSection';
 import { Button } from './components/ui/button';
-import { Analytics } from "@vercel/analytics/react";
 
 // Sare pages ka import kar rahe hain
 import ToolsPage from './pages/tools';
@@ -26,49 +25,51 @@ import CleanupGuidePage from './pages/manage/cleanup-guide';
 import SocialMediaGuidePage from './pages/manage/social-media-guide';
 import ActionStepsPage from './pages/manage/action-steps';
 
-// Simple router component banaya hai
+// TIMEOUT FIX: Bahut simple router banaya hai jo main thread ko block nahi karta
 function Router() {
+  // PATH DETECTION: Browser check aur simple path detection sirf initial state mein
   const [currentPath, setCurrentPath] = useState(() => {
-    // Initial path ko properly detect karte hain
+    if (typeof window === 'undefined') return '/';
     const path = window.location.pathname;
-    return path === '' || path === '/' ? '/' : path;
+    return path || '/';
   });
 
+  // WARNING FIX: useEffect dependency array aur event handlers optimize kar rahe hain
   useEffect(() => {
+    // BROWSER BACK/FORWARD: Simple popstate handler without dependency issues
     const handlePopState = () => {
-      const path = window.location.pathname;
-      setCurrentPath(path === '' || path === '/' ? '/' : path);
+      const newPath = window.location.pathname || '/';
+      setCurrentPath(newPath);
     };
 
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
-
-  // Link components ko override kar rahe hain SPA routing ke liye
-  useEffect(() => {
-    const handleLinkClick = (e: Event) => {
-      const target = e.target as HTMLAnchorElement;
-      if (target.tagName === 'A' && target.href && target.href.startsWith(window.location.origin)) {
-        const url = new URL(target.href);
-        const newPath = url.pathname === '' || url.pathname === '/' ? '/' : url.pathname;
-        if (newPath !== currentPath && !target.hasAttribute('target')) {
-          e.preventDefault();
-          setCurrentPath(newPath);
-          window.history.pushState({}, '', newPath);
-          // Navigation pe smoothly top par scroll karte hain
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+    // LINK CLICKS: Optimized SPA navigation jo warnings nahi deta
+    const handleClick = (e: Event) => {
+      const link = e.target as HTMLAnchorElement;
+      // TYPE SAFETY: Proper type checking aur null checks
+      if (link?.tagName === 'A' && link.href && link.href.startsWith(window.location.origin) && !link.target) {
+        e.preventDefault();
+        const newPath = new URL(link.href).pathname || '/';
+        // CURRENT PATH CHECK: State comparison ke bina direct update
+        setCurrentPath(prev => {
+          if (prev !== newPath) {
+            window.history.pushState({}, '', newPath);
+            window.scrollTo(0, 0);
+            return newPath;
+          }
+          return prev;
+        });
       }
     };
 
-    document.addEventListener('click', handleLinkClick);
-    return () => document.removeEventListener('click', handleLinkClick);
-  }, [currentPath]);
-
-  // Path change hone par top par scroll ensure karte hain
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [currentPath]);
+    // EVENT LISTENERS: Memory leak prevent karne ke liye proper cleanup
+    window.addEventListener('popstate', handlePopState);
+    document.addEventListener('click', handleClick);
+    
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      document.removeEventListener('click', handleClick);
+    };
+  }, []); // DEPENDENCY FIX: Empty array se warnings nahi aayenge
 
   // Route components ka switch case
   switch (currentPath) {
