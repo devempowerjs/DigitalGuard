@@ -41,11 +41,25 @@ export default function CleanupGuidePage() {
       <div className="space-y-8">
         {/* Hero Image */}
         <div className="relative w-full h-64 rounded-lg overflow-hidden">
-          <ImageWithFallback
+          {/* CLEANUP GUIDE PAGE IMAGE FIX: Commented out Unsplash source that may be blocked by school networks */}
+          {/* Original Unsplash image: https://images.unsplash.com/photo-1559526324-593bc073d938?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGVhbmluZyUyMGRpZ2l0YWwlMjBkYXRhfGVufDF8fHx8MTc1ODg4MjA5N3ww&ixlib=rb-4.1.0&q=80&w=1080 */}
+          {/* <ImageWithFallback
             src="https://images.unsplash.com/photo-1559526324-593bc073d938?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGVhbmluZyUyMGRpZ2l0YWwlMjBkYXRhfGVufDF8fHx8MTc1ODg4MjA5N3ww&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Digital data cleaning and organization"
             className="w-full h-full object-cover"
-          />
+          /> */}
+          
+          {/* NEW: CSS-based digital cleanup illustration */}
+          <div className="w-full h-full bg-gradient-to-r from-emerald-500 via-cyan-600 to-blue-600 flex items-center justify-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iY2xlYW51cCIgeD0iMCIgeT0iMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNMCAwaDQwdjQwSDBWMHptMjAgMjBhMTAgMTAgMCAxIDAgMC0yMCAxMCAxMCAwIDAgMCAwIDIweiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW9wYWNpdHk9IjAuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNjbGVhbnVwKSIvPjwvc3ZnPg==')] opacity-20"></div>
+            <div className="text-center text-white z-10 p-6">
+              <svg className="w-16 h-16 mx-auto mb-4 opacity-90" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6 2l2 2h8l2-2h2v2h-1l-1 16H6L5 4H4V2h2zM8 6v10h2V6H8zm4 0v10h2V6h-2z"/>
+              </svg>
+              <h3 className="text-xl font-semibold opacity-90">Digital Cleanup</h3>
+              <p className="text-sm opacity-75 mt-2">Clean & Organize Your Data</p>
+            </div>
+          </div>
         </div>
 
         {/* Progress Tracker */}
