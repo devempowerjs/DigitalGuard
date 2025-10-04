@@ -24,11 +24,33 @@ export default function SocialMediaGuidePage() {
       <div className="space-y-8">
         {/* Hero Image */}
         <div className="relative w-full h-64 rounded-lg overflow-hidden">
-          <ImageWithFallback
+          {/* SOCIAL MEDIA GUIDE PAGE IMAGE FIX: Commented out Unsplash source that may be blocked by school networks */}
+          {/* Original Unsplash image: https://images.unsplash.com/photo-1667372283545-1261fb5c427a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMG1hbmFnZW1lbnQlMjBwcml2YWN5fGVufDF8fHx8MTc1ODg4MjA5OXww&ixlib=rb-4.1.0&q=80&w=1080 */}
+          {/* <ImageWithFallback
             src="https://images.unsplash.com/photo-1667372283545-1261fb5c427a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMG1hbmFnZW1lbnQlMjBwcml2YWN5fGVufDF8fHx8MTc1ODg4MjA5OXww&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Social media privacy and management"
             className="w-full h-full object-cover"
-          />
+          /> */}
+          
+          {/* NEW: CSS-based social media privacy illustration */}
+          <div className="w-full h-full bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 flex items-center justify-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0ic29jaWFsIiB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxjaXJjbGUgY3g9IjEwIiBjeT0iMTAiIHI9IjMiIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PGNpcmNsZSBjeD0iMzAiIGN5PSIxMCIgcj0iMyIgZmlsbD0iIzAwMCIgZmlsbC1vcGFjaXR5PSIwLjEiLz48Y2lyY2xlIGN4PSIxMCIgY3k9IjMwIiByPSIzIiBmaWxsPSIjMDAwIiBmaWxsLW9wYWNpdHk9IjAuMSIvPjxjaXJjbGUgY3g9IjMwIiBjeT0iMzAiIHI9IjMiIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3NvY2lhbCkiLz48L3N2Zz4=')] opacity-20"></div>
+            <div className="text-center text-white z-10 p-6">
+              <div className="flex justify-center space-x-3 mb-4">
+                <div className="w-8 h-8 bg-white/30 rounded-full flex items-center justify-center">
+                  <div className="w-4 h-4 bg-white rounded"></div>
+                </div>
+                <div className="w-8 h-8 bg-white/30 rounded-sm flex items-center justify-center">
+                  <div className="w-4 h-4 bg-white rounded-sm"></div>
+                </div>
+                <div className="w-8 h-8 bg-white/30 rounded-full flex items-center justify-center">
+                  <div className="w-4 h-4 bg-white rounded-full"></div>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold opacity-90">Social Media Privacy</h3>
+              <p className="text-sm opacity-75 mt-2">Secure Your Social Platforms</p>
+            </div>
+          </div>
         </div>
 
         {/* Introduction */}
