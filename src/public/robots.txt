@@ -1,11 +1,49 @@
-# Allow all standard crawlers
+# ROBOTS.TXT: DigitalGuard ke liye search engine guidelines
 User-agent: *
 Allow: /
 
-# Sitemap location
+# EDUCATIONAL CONTENT: Important pages SEO ke liye
+Allow: /learn/*
+Allow: /manage/*
+Allow: /tools
+Allow: /resources
+Allow: /about
+Allow: /contact
+
+# SITEMAP LOCATION: Google Search Console ke liye sahi URL
 Sitemap: https://digitalguard.vercel.app/sitemap.xml
 
-# Disallow AI training crawlers
+# CRAWL SETTINGS: Respectful crawling ke liye delay
+Crawl-delay: 1
+
+# SEARCH ENGINES: Major search engines ko allow kar rahe hain
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# SOCIAL MEDIA CRAWLERS: Open Graph data ke liye
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# AI TRAINING CRAWLERS: Block kar rahe hain
 User-agent: GPTBot
 Disallow: /
 
@@ -20,3 +58,19 @@ Disallow: /
 
 User-agent: Claude-Web
 Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+# ACADEMIC CRAWLERS: Educational content ko allow
+User-agent: ia_archiver
+Allow: /
+
+User-agent: Wayback
+Allow: /
+
+# HOST INFO: Vercel domain specify kar rahe hain
+Host: https://digitalguard.vercel.app
