@@ -22,11 +22,25 @@ export default function ConsequencesPage() {
       <div className="space-y-8">
         {/* Hero Image */}
         <div className="relative w-full h-64 rounded-lg overflow-hidden">
-          <ImageWithFallback
+          {/* CONSEQUENCES PAGE IMAGE FIX: Commented out Unsplash source that may be blocked by school networks */}
+          {/* Original Unsplash image: https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zZXF1ZW5jZXMlMjBwcml2YWN5JTIwb25saW5lfGVufDF8fHx8MTc1ODg4MjA5NXww&ixlib=rb-4.1.0&q=80&w=1080 */}
+          {/* <ImageWithFallback
             src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zZXF1ZW5jZXMlMjBwcml2YWN5JTIwb25saW5lfGVufDF8fHx8MTc1ODg4MjA5NXww&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Privacy and consequences visualization"
             className="w-full h-full object-cover"
-          />
+          /> */}
+          
+          {/* NEW: CSS-based consequences warning illustration */}
+          <div className="w-full h-full bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 flex items-center justify-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0id2FybmluZyIgeD0iMCIgeT0iMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cG9seWdvbiBwb2ludHM9IjIwLDUgMzUsMzUgNSwzNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLW9wYWNpdHk9IjAuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCN3YXJuaW5nKSIvPjwvc3ZnPg==')] opacity-20"></div>
+            <div className="text-center text-white z-10 p-6">
+              <svg className="w-16 h-16 mx-auto mb-4 opacity-90" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+              </svg>
+              <h3 className="text-xl font-semibold opacity-90">Digital Consequences</h3>
+              <p className="text-sm opacity-75 mt-2">Understanding Privacy Impact</p>
+            </div>
+          </div>
         </div>
 
         {/* Introduction */}
