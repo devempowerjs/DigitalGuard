@@ -23,11 +23,39 @@ export default function DataStoragePage() {
       <div className="space-y-8">
         {/* Hero Image */}
         <div className="relative w-full h-64 rounded-lg overflow-hidden">
-          <ImageWithFallback
+          {/* DATA STORAGE PAGE IMAGE FIX: Commented out Unsplash source that may be blocked by school networks */}
+          {/* Original Unsplash image: https://images.unsplash.com/photo-1506399441630-774ef431470f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc3RvcmFnZSUyMHNlcnZlcnMlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc1ODg4MjA5Nnww&ixlib=rb-4.1.0&q=80&w=1080 */}
+          {/* <ImageWithFallback
             src="https://images.unsplash.com/photo-1506399441630-774ef431470f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc3RvcmFnZSUyMHNlcnZlcnMlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc1ODg4MjA5Nnww&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Data storage servers and technology"
             className="w-full h-full object-cover"
-          />
+          /> */}
+          
+          {/* NEW: CSS-based data storage and servers illustration */}
+          <div className="w-full h-full bg-gradient-to-br from-slate-600 via-blue-700 to-purple-800 flex items-center justify-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0ic2VydmVyIiB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0IiBmaWxsPSIjMDAwIiBmaWxsLW9wYWNpdHk9IjAuMSIvPjxyZWN0IHg9IjgiIHk9IjE2IiB3aWR0aD0iMjQiIGhlaWdodD0iNCIgZmlsbD0iIzAwMCIgZmlsbC1vcGFjaXR5PSIwLjEiLz48cmVjdCB4PSI4IiB5PSIyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjQiIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3NlcnZlcikiLz48L3N2Zz4=')] opacity-30"></div>
+            <div className="text-center text-white z-10 p-6">
+              <div className="flex justify-center space-x-2 mb-4">
+                <div className="w-8 h-12 bg-white/30 rounded-sm flex flex-col justify-center space-y-1 p-1">
+                  <div className="w-full h-1 bg-green-400 rounded"></div>
+                  <div className="w-full h-1 bg-blue-400 rounded"></div>
+                  <div className="w-full h-1 bg-yellow-400 rounded"></div>
+                </div>
+                <div className="w-8 h-12 bg-white/30 rounded-sm flex flex-col justify-center space-y-1 p-1">
+                  <div className="w-full h-1 bg-red-400 rounded"></div>
+                  <div className="w-full h-1 bg-green-400 rounded"></div>
+                  <div className="w-full h-1 bg-blue-400 rounded"></div>
+                </div>
+                <div className="w-8 h-12 bg-white/30 rounded-sm flex flex-col justify-center space-y-1 p-1">
+                  <div className="w-full h-1 bg-purple-400 rounded"></div>
+                  <div className="w-full h-1 bg-yellow-400 rounded"></div>
+                  <div className="w-full h-1 bg-green-400 rounded"></div>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold opacity-90">Data Storage & Servers</h3>
+              <p className="text-sm opacity-75 mt-2">Where Your Information Lives</p>
+            </div>
+          </div>
         </div>
 
         {/* Introduction */}
