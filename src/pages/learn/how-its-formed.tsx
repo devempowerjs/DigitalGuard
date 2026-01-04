@@ -21,14 +21,14 @@ export default function HowItsFormedPage() {
       <div className="space-y-8">
         {/* Hero Image */}
         <div className="relative w-full h-64 rounded-lg overflow-hidden">
-           {/* LEARN PAGE IMAGE FIX: Commented out Unsplash source that may be blocked by school networks */} 
+          {/* LEARN PAGE IMAGE FIX: Commented out Unsplash source that may be blocked by school networks */}
 
-            <ImageWithFallback
+          <ImageWithFallback
             src="https://images.unsplash.com/photo-1666624833516-6d0e320c610d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwZm9vdHByaW50JTIwZGF0YSUyMGZvcm1hdGlvbnxlbnwxfHx8fDE3NTg4ODIwOTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Digital footprint formation visualisation"
             className="w-full h-full object-cover"
-          /> 
-          
+          />
+
           {/* NEW: CSS-based digital footprint formation illustration */}
           {/* <div className="w-full h-full bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 flex items-center justify-center relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZHJvcGxldHMiIHg9IjAiIHk9IjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0iIzAwMCIgZmlsbC1vcGFjaXR5PSIwLjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZHJvcGxldHMpIi8+PC9zdmc+')] opacity-20"></div>
@@ -41,13 +41,13 @@ export default function HowItsFormedPage() {
               <h3 className="text-xl font-semibold opacity-90">Digital Footprint Formation</h3>
               <p className="text-sm opacity-75 mt-2">Every Click Creates a Digital Trace</p>
             </div>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
 
         {/* Introduction */}
         <div className="prose prose-lg max-w-none">
           <p>
-            Every click, search, post, and digital interaction creates traces that form your digital footprint. 
+            Every click, search, post, and digital interaction creates traces that form your digital footprint.
             Understanding how these traces are created is the first step in managing your online presence effectively.
           </p>
         </div>
