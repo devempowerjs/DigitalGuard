@@ -22,7 +22,7 @@ export default function HowItsFormedPage() {
         {/* Hero Image */}
         <div className="relative w-full h-64 rounded-lg overflow-hidden">
            {/* LEARN PAGE IMAGE FIX: Commented out Unsplash source that may be blocked by school networks */} 
-           Original Unsplash image: https://images.unsplash.com/photo-1666624833516-6d0e320c610d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwZm9vdHByaW50JTIwZGF0YSUyMGZvcm1hdGlvbnxlbnwxfHx8fDE3NTg4ODIwOTV8MA&ixlib=rb-4.1.0&q=80&w=1080 
+
             <ImageWithFallback
             src="https://images.unsplash.com/photo-1666624833516-6d0e320c610d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwZm9vdHByaW50JTIwZGF0YSUyMGZvcm1hdGlvbnxlbnwxfHx8fDE3NTg4ODIwOTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Digital footprint formation visualisation"
