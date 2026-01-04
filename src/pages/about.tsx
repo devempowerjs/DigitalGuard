@@ -36,17 +36,18 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
               <div className="lg:col-span-1">
                 <div className="relative">
+                  {/*
                   <img 
-                    src={MayankImage} 
+                    src={mayankImage} 
                     alt="Mayank Raj - Founder of DigitalGuard"
                     className="w-full max-w-sm mx-auto rounded-xl shadow-lg"
-                  />
+                  /> */}
                   <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md">
                     <span className="font-semibold">Founder & Creator</span>
                   </div>
                 </div>
               </div>
-              // change capital M to smaller m for picture [ Self Note ]
+              
               <div className="lg:col-span-2 space-y-6">
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
