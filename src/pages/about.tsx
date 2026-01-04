@@ -1,4 +1,4 @@
-import React from 'react';
+timport React from 'react';
 import { Layout } from '../components/layout/Layout';
 import { Github, Mail, BookOpen, Users, Shield, Target } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
@@ -37,7 +37,7 @@ export default function AboutPage() {
               <div className="lg:col-span-1">
                 <div className="relative">
                   <img 
-                    src={mayankImage} 
+                    src={MayankImage} 
                     alt="Mayank Raj - Founder of DigitalGuard"
                     className="w-full max-w-sm mx-auto rounded-xl shadow-lg"
                   />
@@ -46,7 +46,7 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-              
+              // change capital M to smaller m for picture [ Self Note ]
               <div className="lg:col-span-2 space-y-6">
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
