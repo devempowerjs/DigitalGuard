@@ -1,4 +1,4 @@
-timport React from 'react';
+import React from 'react';
 import { Layout } from '../components/layout/Layout';
 import { Github, Mail, BookOpen, Users, Shield, Target } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
