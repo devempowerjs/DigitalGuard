@@ -170,7 +170,7 @@ export function Footer() {
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                © 2025 DigitalGuard. All rights reserved.
+                © 2025 - 2026 DigitalGuard. All rights reserved.
               </p>
               <div className="flex space-x-4 text-sm">
                 <a href="/privacy-policy" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors">
@@ -185,7 +185,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm flex items-center">
-              Made with <Heart className="h-4 w-4 text-red-500 mx-1" /> by Mayank Raj
+              Made with <Heart className="h-4 w-4 text-red-500 mx-1" /> by Mayank Raj (devempowerjs)
             </p>
           </div>
         </div>
