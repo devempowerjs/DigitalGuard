@@ -39,7 +39,7 @@ Follow these steps to run the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/digitalguard.git
+git clone https://github.com/devempowerjs/digitalguard.git
 
 # Go to project folder
 cd digitalguard
