@@ -1,22 +1,11 @@
 {
-  "version": 2,
-
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
+  "framework": "vite",
 
   "outputDirectory": "dist",
 
   "cleanUrls": true,
 
   "rewrites": [
-    {
-      "source": "/assets/(.*)",
-      "destination": "/assets/$1"
-    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
@@ -35,3 +24,4 @@
     }
   ]
 }
+
