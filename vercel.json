@@ -1,5 +1,6 @@
 {
   "version": 2,
+
   "builds": [
     {
       "src": "package.json",
@@ -8,7 +9,15 @@
   ],
 
   "outputDirectory": "dist",
+
   "cleanUrls": true,
+
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
 
   "headers": [
     {
@@ -20,13 +29,5 @@
         }
       ]
     }
-  ],
-
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
   ]
 }
-
