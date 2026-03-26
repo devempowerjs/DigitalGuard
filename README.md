@@ -1,11 +1,11 @@
 # DigitalGuard
-👁️ Source available for viewing only — all rights reserved
+ Source available for viewing only — all rights reserved
 
 This is the official source code of the DigitalGuard website, created by [devempower.js](https://github.com/devempowerjs).
 
 ---
 
-## 📖 About DigitalGuard
+##  About DigitalGuard
 
 **DigitalGuard** is an awareness-driven website focused on educating users about **digital footprints, online privacy, and safe internet practices**.  
 The goal of this project is to help individuals understand how their online activities are tracked, managed, and how they can take control of their digital presence.
@@ -14,7 +14,7 @@ The site provides resources, practical tools, and guidelines for better **digita
 
 ---
 
-## ✨ Features
+##  Features
 
 * **About Page** – Learn what DigitalGuard is and why it matters.
 * **Resources & Guides** – Explore curated content on digital safety.
@@ -24,7 +24,7 @@ The site provides resources, practical tools, and guidelines for better **digita
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend:** React + Vite + TypeScript
 * **Styling:** CSS (modular)
@@ -33,7 +33,7 @@ The site provides resources, practical tools, and guidelines for better **digita
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 Follow these steps to run the project locally:
 
