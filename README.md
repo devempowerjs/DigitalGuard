@@ -49,3 +49,12 @@ npm install
 
 # Run the development server
 npm run dev
+
+
+
+
+## Author  
+
+Mayank Raj (devempowerjs)
+
+Building Software That Matters • Problem Solver • Open Source
